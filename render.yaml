@@ -23,7 +23,7 @@ services:
   # ── Redis Cache ───────────────────────────────────────────────
   - type: redis
     name: sconia-redis
-    plan: free          # upgrade for production
+    plan: starter       # free tier already taken by civicos-redis
     region: oregon
     maxmemoryPolicy: allkeys-lru
     ipAllowList: []
