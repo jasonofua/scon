@@ -26,6 +26,7 @@ services:
     plan: free          # upgrade for production
     region: oregon
     maxmemoryPolicy: allkeys-lru
+    ipAllowList: []
 
   # ── Backend API (FastAPI + Docker) ────────────────────────────
   - type: web
