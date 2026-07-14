@@ -47,7 +47,7 @@ services:
       - key: DEBUG
         value: "False"
       - key: LOG_LEVEL
-        value: INFO
+        value: info
       - key: LOG_FORMAT
         value: json
 
@@ -69,7 +69,7 @@ services:
       - key: VECTOR_DB_TYPE
         value: qdrant
       - key: QDRANT_URL
-        sync: false       # paste your Qdrant Cloud URL in the dashboard
+        value: "https://4fd0031d-c5f4-4783-9bca-f10c8151dfcf.us-central1-0.gcp.cloud.qdrant.io"
       - key: QDRANT_API_KEY
         sync: false       # paste your Qdrant API key in the dashboard
       - key: CHROMADB_PATH

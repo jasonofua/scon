@@ -32,8 +32,10 @@ echo "[INFO] Migrations complete"
 
 # ── 4. Start the application ─────────────────────────────────────────────────
 echo "[INFO] Starting Uvicorn..."
+# uvicorn only accepts lowercase log levels — normalise whatever Render injects
+LOG_LEVEL_LOWER=$(echo "${LOG_LEVEL:-info}" | tr '[:upper:]' '[:lower:]')
 exec uvicorn app.main:app \
     --host 0.0.0.0 \
     --port "${PORT:-8000}" \
     --workers "${WEB_CONCURRENCY:-2}" \
-    --log-level "${LOG_LEVEL:-info}"
+    --log-level "${LOG_LEVEL_LOWER}"
