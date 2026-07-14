@@ -9,6 +9,7 @@ from fastapi import Request, Response
 from starlette.middleware.base import BaseHTTPMiddleware
 
 from app.services.monitoring import performance_monitor
+from app.config import settings
 
 logger = logging.getLogger(__name__)
 
