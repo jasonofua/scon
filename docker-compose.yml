@@ -1,0 +1,101 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database with pgvector
+  postgres:
+    image: pgvector/pgvector:pg15
+    container_name: sconia_postgres
+    environment:
+      POSTGRES_DB: sconia_db
+      POSTGRES_USER: sconia_user
+      POSTGRES_PASSWORD: sconia_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init_postgres.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sconia_user -d sconia_db"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Qdrant Vector Database
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: sconia_qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    environment:
+      QDRANT__SERVICE__HTTP_PORT: 6333
+      QDRANT__SERVICE__GRPC_PORT: 6334
+
+  # Redis for caching and sessions
+  redis:
+    image: redis:7-alpine
+    container_name: sconia_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+  # SCONIA Backend API
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sconia_api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=postgresql://sconia_user:sconia_password@postgres:5432/sconia_db
+      - DATABASE_URL_ASYNC=postgresql+asyncpg://sconia_user:sconia_password@postgres:5432/sconia_db
+      - QDRANT_URL=http://qdrant:6333
+      - REDIS_URL=redis://redis:6379/0
+      - DEBUG=True
+      - SECRET_KEY=your_super_secret_key_here_change_in_production
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TIKTOKEN_CACHE_DIR=/app/tiktoken_cache
+    volumes:
+      - ./uploads:/app/uploads
+      - ./data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+      redis:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Frontend (placeholder for future React app)
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   container_name: sconia_frontend
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - REACT_APP_API_URL=http://localhost:8000/api/v1
+  #   depends_on:
+  #     - api
+
+volumes:
+  postgres_data:
+  qdrant_data:
+  redis_data:
+
+networks:
+  default:
+    name: sconia_network

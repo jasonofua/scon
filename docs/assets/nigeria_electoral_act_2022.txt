@@ -1,0 +1,206 @@
+ELECTORAL ACT 2022 - FEDERAL REPUBLIC OF NIGERIA
+===============================================
+
+PREAMBLE
+--------
+An Act to regulate the conduct of Federal, State and Area Council elections; and for related matters.
+
+PART I - PRELIMINARY PROVISIONS
+===============================
+
+Section 1 - Short Title and Commencement
+----------------------------------------
+(1) This Act may be cited as the Electoral Act, 2022.
+(2) This Act shall come into force on the date of its commencement.
+
+Section 2 - Interpretation
+-------------------------
+In this Act, unless the context otherwise requires:
+"Ballot" means a ballot paper used for voting at an election
+"Candidate" means a person whose name is submitted by a political party for election
+"Commission" means the Independent National Electoral Commission established under section 153 of the Constitution
+"Election" means Federal, State, and Area Council elections
+"Electoral offence" means an offence under this Act or any other law relating to elections
+"Political party" means an association of persons whose activities include canvassing for votes in support of a candidate for election
+
+PART II - INDEPENDENT NATIONAL ELECTORAL COMMISSION
+===================================================
+
+Section 3 - Functions of the Commission
+--------------------------------------
+The Commission shall have power to:
+(a) organize, undertake and supervise all elections to the offices of the President and Vice-President, Governor and Deputy Governor, and to the membership of the Senate, House of Representatives and House of Assembly of each State of the Federation;
+(b) register political parties in accordance with the provisions of this Act and guidelines prescribed by the Commission;
+(c) monitor the organization and operation of the political parties, including their finances;
+(d) arrange for the annual examination and auditing of the funds and accounts of political parties, and publish a report on such examination and audit for public information;
+(e) arrange and conduct the registration of persons qualified to vote and prepare, maintain and revise the register of voters for the purpose of any election under this Act;
+
+Section 4 - Powers of the Commission
+-----------------------------------
+(1) Subject to the provisions of this Act, the Commission may issue regulations, guidelines or manuals for the purpose of giving effect to the provisions of this Act.
+(2) The Commission shall have power to impose administrative sanctions including fines on any political party that fails to comply with the provisions of this Act.
+
+PART III - POLITICAL PARTIES
+============================
+
+Section 84 - Political Party Primaries
+--------------------------------------
+(1) A political party seeking to nominate candidates for elections under this Act shall hold direct or indirect primaries for aspirants to all elective positions, which shall be monitored by the Commission.
+(2) A political party shall not impose nomination qualification or disqualification criteria, measures, or conditions on any aspirant or candidate for any election in its constitution, guidelines, or rules for nomination of candidates for elections, except as prescribed under sections 65, 66, 106, 107, 131, 137, 177, and 187 of the Constitution and section 29 of this Act.
+(3) A political party and any of its aspirants that fails to comply with the provisions of this section commits an offence and is liable on conviction to a maximum fine of N10,000,000 or imprisonment for a term not more than two years or both.
+
+Section 85 - Nomination of Candidates by Political Parties
+---------------------------------------------------------
+(1) A political party shall not nominate any candidate for any election unless the person has been validly nominated in accordance with the provisions of this Act.
+(2) The nomination of candidates by political parties for various elective offices shall be by direct or indirect primaries.
+(3) A political party that adopts the direct primaries procedure shall ensure that all members of the party in the constituency where the primary is to be conducted are given equal opportunity to participate in the primary.
+
+PART IV - VOTER REGISTRATION
+============================
+
+Section 10 - Qualification for Registration as a Voter
+-----------------------------------------------------
+A person shall be qualified to be registered as a voter if such person:
+(a) is a citizen of Nigeria;
+(b) has attained the age of eighteen years;
+(c) is ordinarily resident, works in, originates from the Local Government Area, Area Council or constituency covered by the registration centre;
+(d) presents himself or herself to the registration officers of the Commission for registration as a voter; and
+(e) is not subject to any legal incapacity to vote under any law, rule or regulation.
+
+Section 11 - Disqualification for Registration
+---------------------------------------------
+A person shall not be qualified for registration as a voter if such person:
+(a) is not a citizen of Nigeria;
+(b) is under the age of eighteen years;
+(c) is of unsound mind;
+(d) is under a sentence of death imposed by any competent court of law in Nigeria; or
+(e) is under a sentence of imprisonment for any offence involving dishonesty or fraud.
+
+PART V - CONDUCT OF ELECTIONS
+=============================
+
+Section 25 - Time for Holding Elections
+--------------------------------------
+(1) An election under this Act shall be held on a date to be appointed by the Commission:
+Provided that the date shall not be earlier than 150 days and not later than 30 days before the expiration of the term of office of the last holder of that office.
+
+Section 26 - Notice of Election
+------------------------------
+(1) The Commission shall, not later than 360 days before the date appointed for holding an election under this Act, publish a notice in each State of the Federation and the Federal Capital Territory, Abuja:
+(a) stating the date on which the election will be held;
+(b) appointing the place at which nomination papers are to be delivered; and
+(c) stating the date and time for the delivery of nomination papers.
+
+Section 29 - Qualification for Election
+--------------------------------------
+(1) A candidate for an election shall be qualified if:
+(a) he is a citizen of Nigeria by birth;
+(b) he has attained the age specified in the Constitution for that office;
+(c) he is able to read and write English language to the satisfaction of the Commission;
+(d) he is a member of a political party and is sponsored by that political party; and
+(e) he has been educated up to at least School Certificate level or its equivalent.
+
+PART VI - ELECTION OFFENCES AND LEGAL PROCEEDINGS
+=================================================
+
+Section 115 - Bribery
+--------------------
+(1) A person commits the offence of bribery if such person directly or indirectly, by himself or by any other person on his behalf:
+(a) gives, lends, agrees to give or lend, offers, promises, or promises to procure or to endeavour to procure, any money or valuable consideration to or for any voter, or to or for any person on behalf of any voter or to or for any other person in order to induce any voter to vote or refrain from voting, or corruptly does any such act on account of such voter having voted or refrained from voting at any election;
+
+Section 116 - Treating
+---------------------
+(1) A person commits the offence of treating if such person corruptly, by himself or by any other person, either before, during or after an election, directly or indirectly gives or provides, or pays wholly or in part the expense of giving or providing, any food, drink, entertainment, or provision to or for any person:
+(a) for the purpose of corruptly influencing that person or any other person to vote or refrain from voting at such election; or
+(b) on account of such person or any other person having voted or refrained from voting or being about to vote or refrain from voting at such election.
+
+Section 117 - Undue Influence
+----------------------------
+(1) A person commits the offence of undue influence if such person directly or indirectly, by himself or by any other person on his behalf, makes use of or threatens to make use of any force, violence or restraint, or inflicts or threatens to inflict any injury, damage, harm or loss upon or against any person in order to induce or compel such person to vote or refrain from voting, or on account of such person having voted or refrained from voting at any election.
+
+PART VII - ELECTION PETITIONS
+=============================
+
+Section 131 - Right of Appeal
+----------------------------
+(1) Any candidate who participated in an election and is aggrieved by the decision of the returning officer may appeal to the Election Petition Tribunal having jurisdiction in that area.
+(2) An appeal under subsection (1) of this section shall be filed within 21 days from the date of the declaration of result of the election.
+
+Section 132 - Grounds for Petition
+---------------------------------
+An election may be questioned on any of the following grounds, that is to say:
+(a) that a person whose election is questioned was, at the time of the election, not qualified to contest the election;
+(b) that the election was invalid by reason of corrupt practices or non-compliance with the provisions of this Act;
+(c) that the respondent was not duly elected by majority of lawful votes cast; or
+(d) that the petitioner or his agent was unlawfully prevented from voting or his lawful vote was unlawfully rejected.
+
+PART VIII - BIMODAL VOTER ACCREDITATION SYSTEM (BVAS)
+=====================================================
+
+Section 47 - Use of Electronic Voting and Result Transmission
+------------------------------------------------------------
+(1) The Commission may adopt electronic voting and result transmission for any election under this Act.
+(2) Where the Commission adopts electronic voting and result transmission, it shall ensure the integrity and security of the process.
+(3) The Commission shall provide adequate safeguards for the storage and security of the materials and equipment used for electronic voting.
+
+Section 48 - Accreditation of Voters
+-----------------------------------
+(1) The Commission shall provide for the accreditation of voters before voting commences.
+(2) Accreditation of voters may be done electronically or manually as the Commission may determine.
+(3) No person shall vote at any election without being first accredited.
+
+PART IX - CAMPAIGN FINANCE
+==========================
+
+Section 88 - Limitation of Election Expenses
+-------------------------------------------
+(1) Election expenses shall not exceed the sum stipulated in subsections (2), (3), (4) and (5) of this section.
+(2) The maximum election expenses to be incurred by a candidate at a presidential election shall be N5,000,000,000.
+(3) The maximum election expenses to be incurred by a candidate at a governorship election shall be N1,000,000,000.
+(4) The maximum election expenses to be incurred by a candidate for Senate shall be N100,000,000.
+(5) The maximum election expenses to be incurred by a candidate for House of Representatives shall be N70,000,000.
+
+Section 89 - Prohibition of Certain Conduct
+------------------------------------------
+(1) A political party, candidate or any other person shall not:
+(a) directly or indirectly threaten any person with the withdrawal of business, employment or other benefit;
+(b) directly or indirectly promise to procure or endeavour to procure employment or other benefit for any person;
+(c) corruptly induce or procure any person to withdraw from being a candidate at an election;
+(d) use government resources for campaign purposes.
+
+PART X - MISCELLANEOUS PROVISIONS
+=================================
+
+Section 150 - Regulations
+------------------------
+The Commission may, subject to the provisions of this Act, make regulations generally for the purpose of giving effect to this Act.
+
+Section 151 - Repeal and Savings
+-------------------------------
+(1) The Electoral Act No. 6, 2010 is hereby repealed.
+(2) Any subsidiary legislation made under the repealed Act shall continue in force as if made under this Act, in so far as it is not inconsistent with this Act.
+
+Section 152 - Citation
+---------------------
+This Act may be cited as the Electoral Act, 2022.
+
+SCHEDULES
+=========
+
+FIRST SCHEDULE - FORMS
+----------------------
+Forms for various electoral processes including:
+- Nomination forms
+- Ballot papers
+- Result sheets
+- Petition forms
+
+SECOND SCHEDULE - OFFENCES AND PENALTIES
+---------------------------------------
+Detailed list of electoral offences and their corresponding penalties, including:
+- Bribery: Fine of N1,000,000 or imprisonment for 12 months
+- Undue influence: Fine of N500,000 or imprisonment for 6 months
+- Multiple voting: Fine of N100,000 or imprisonment for 6 months
+- Impersonation: Fine of N1,000,000 or imprisonment for 2 years
+
+This Act represents a significant reform of Nigeria's electoral framework, introducing modern technologies like BVAS and strengthening provisions for transparent, credible elections.

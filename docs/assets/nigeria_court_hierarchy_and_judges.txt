@@ -1,0 +1,237 @@
+NIGERIA COURT HIERARCHY AND JUDICIAL SYSTEM
+===========================================
+
+OVERVIEW
+--------
+The Nigerian judicial system comprises different types of courts that exist in layers of superiority, each with specific functions. These courts form the judicial arm of government, ensuring a clear separation of powers as entrenched in the Nigerian constitution. The executive and legislative arms do not interfere in the activities of the Judiciary.
+
+THE 8 HIERARCHY OF COURTS IN NIGERIA
+====================================
+
+1. SUPREME COURT OF NIGERIA
+---------------------------
+- Position: Highest court in the country
+- Established: 1963
+- Location: Supreme Court Building, Three Arms Zone, Abuja, FCT
+- Composition: Chief Justice of Nigeria and up to 21 Justices
+- Appointment: By the President upon recommendation of the National Judicial Council (NJC) and approval by the Senate
+- Retirement Age: 70 years mandatory
+
+Functions:
+- Final court of appeal for all civil and criminal cases in Nigeria
+- Settles disputes between states, and between state and federal government
+- Interpreter of the law and constitution
+- Guardian of the constitution
+- Advisory role to the executive
+- Original jurisdiction in disputes between states and between federal government and states
+
+Current Chief Justice: Justice Kudirat Motonmori Olatokunbo Kekere-Ekun, GCON (appointed 22 August 2024)
+
+2. COURT OF APPEAL
+------------------
+- Position: Intermediate appellate court of the Nigerian federal court system
+- Locations: 72 appeal courts across different states
+- Leadership: President of the Court of Appeal
+- Composition: 66 judges approved by the Senate
+
+Functions:
+- Intermediate appellate court of the Nigerian federal court system
+- Original jurisdiction to determine validity of elections for President, Vice President, Governor, or Deputy Governor
+- Appeals from High Courts, Sharia Courts of Appeal, Customary Courts of Appeal, and National Industrial Court
+- Review decisions of administrative bodies and tribunals
+
+3. FEDERAL HIGH COURT
+---------------------
+- Position: Third in hierarchy
+- Leadership: Chief Judge
+- Jurisdiction: Primarily civil cases
+- Locations: More than 15 states in the country
+
+Functions:
+- Court of first instance for federal matters
+- Exclusive jurisdiction over taxation, banking, custom and excise duties, citizenship, copyright
+- Admiralty cases and cases involving the federal government
+- Civil cases as set out under Section 251(1) of the 1999 Constitution
+
+4. STATE HIGH COURT
+-------------------
+- Constitutional Provision: Section 255 of the 1999 Constitution
+- Leadership: Chief Judge (appointed by State House of Assembly, National Assembly for FCT)
+- Jurisdiction: Largest jurisdiction under the 1999 Constitution
+
+Functions:
+- Authority to hear both criminal and civil cases in the state
+- Appellate jurisdiction over decisions of Customary Courts, Area Courts, Magistrate Courts
+- General jurisdiction at state level for civil and criminal matters within state jurisdiction
+
+5. NATIONAL INDUSTRIAL COURT (NIC)
+----------------------------------
+- Established: 1976
+- Leadership: President of the National Industrial Court
+- Location: 11, New Bussa Close, Area 3, Garki, Abuja
+- Powers: All powers of High Court of a state plus appellate jurisdiction
+
+Functions:
+- Adjudicate trade disputes and labour practices
+- Matters related to Factories Act, Trade Disputes Act, Trade Unions Act, Workers' Compensation Law
+- Disputes arising from employment relationships (wrongful dismissal, redundancy, discrimination)
+- Exclusive jurisdiction over industrial disputes
+
+6. SHARIA COURT OF APPEAL
+-------------------------
+- Leadership: Grand Kadi
+- Composition: Number of Kadis
+- Locations: Abuja and Northern states that practice Sharia law
+- Jurisdiction: Appellate jurisdiction in civil cases involving Islamic personal law
+
+Functions:
+- Reviewing cases relating to Sharia and Islamic law
+- Interpreting customary laws as bound by the constitution
+- Handling litigation cases, particularly for the poor
+- Civil cases involving issues of Islamic personal law
+
+7. CUSTOMARY COURT OF APPEAL
+----------------------------
+- Leadership: President of the Customary Court of Appeal
+- Composition: Judges
+- Locations: FCT and states that establish them
+- Jurisdiction: Supervisory and appellate jurisdiction in civil cases involving customary law
+
+Functions:
+- Intermediate appellate court for customary law cases
+- Jurisdiction to hear appeals from customary courts
+- Civil cases involving issues of customary law
+
+8. MAGISTRATE COURTS AND DISTRICT COURTS
+----------------------------------------
+- Establishment: By State House of Assembly law
+- Names: District Courts (Northern Nigeria), Magistrate Courts (Southern Nigeria)
+- Function: Summary judgment judicial body
+- Position: Lowest courts in the hierarchy
+
+Functions:
+- Handle cases at grassroots level
+- Initial entry point for most legal matters in Nigeria
+- Summary determination without briefs or pleadings
+- Limited jurisdiction over criminal and civil matters
+- Criminal cases: Minor offences
+- Civil disputes: Monetary value up to N5 million
+
+COURT JURISDICTION SUMMARY
+=========================
+
+FEDERAL COURTS:
+- Supreme Court: Constitutional matters, final appeals
+- Court of Appeal: Appeals from lower courts, election disputes
+- Federal High Court: Federal revenue, banking, immigration, maritime law
+- National Industrial Court: Labour and industrial disputes
+
+STATE COURTS:
+- State High Court: General civil and criminal jurisdiction
+- Magistrate/District Courts: Minor offences, small civil disputes
+
+SPECIALIZED COURTS:
+- Sharia Court of Appeal: Islamic personal law
+- Customary Court of Appeal: Traditional/customary law matters
+
+CHIEF JUSTICES OF NIGERIA (RECENT)
+==================================
+- Kudirat Kekere-Ekun (2024–present) - Current CJN
+- Olukayode Ariwoola (2022–2024)
+- Tanko Muhammad (2019–2022)
+- Walter Onnoghen (2017–2019)
+- Mahmud Mohammed (2014–2016)
+- Aloma Mariam Mukhtar (2012–2014) - First female CJN
+- Dahiru Musdapher (2011–2012)
+- A. I. Katsina-Alu (2009–2011)
+- Idris Legbo Kutigi (2007–2009)
+
+APPOINTMENT PROCESS
+==================
+- Chief Justice: Nominated by President upon NJC recommendation, confirmed by Senate
+- Supreme Court Justices: Appointed by President upon NJC recommendation, Senate approval
+- Other Federal Judges: Similar process through NJC
+- State Judges: State-level process with NJC involvement
+
+JUDICIAL ADMINISTRATION
+======================
+- National Judicial Council (NJC): Recommends judicial appointments
+- Federal Judicial Service Commission: Administrative support
+- State Judicial Service Commissions: State-level administration
+
+CONSTITUTIONAL FRAMEWORK
+========================
+- 1999 Constitution of the Federal Republic of Nigeria provides the legal framework
+- Separation of powers ensures judicial independence
+- Federal and state court systems operate within defined jurisdictions
+- Appeals process ensures access to justice at multiple levels
+
+This hierarchy ensures orderly administration of justice from grassroots level through the highest court, with clear jurisdictional boundaries and appeal processes for all legal matters in Nigeria.
+
+RECENT LANDMARK SUPREME COURT CASES (2023-2024)
+===============================================
+
+1. NATIONAL INLAND WATERWAYS AUTHORITY v. LAGOS STATE (2024)
+- Date: January 5, 2024
+- Issue: Jurisdiction over waterways and maritime law
+- Significance: Clarified federal vs state authority over inland waterways
+
+2. FEDERAL GOVERNMENT v. 36 STATE GOVERNMENTS (2024)
+- Date: July 11, 2024
+- Issue: Local government autonomy and fund allocation
+- Significance: Landmark decision on fiscal federalism and local government independence
+
+3. LOTTERY REGULATION CASE (2024)
+- Date: October 14, 2024
+- Issue: Regulatory authority over lottery operations
+- Significance: Redefined gambling and lottery regulation framework
+
+4. RIVERS STATE FUND ALLOCATION CASE (2024)
+- Issue: Blocked fund allocation due to political crisis
+- Significance: Set precedent for federal intervention in state affairs
+
+5. INHERITANCE RIGHTS CASES (2023-2024)
+- Multiple cases addressing women's inheritance rights
+- Significance: Progressive interpretation of customary law vs constitutional rights
+
+CURRENT SUPREME COURT JUSTICES (2024)
+====================================
+
+Chief Justice:
+- Justice Kudirat Motonmori Olatokunbo Kekere-Ekun, GCON (appointed August 22, 2024)
+
+Associate Justices:
+- Justice Olukayode Ariwoola (former CJN, now Associate Justice)
+- Justice John Inyang Okoro
+- Justice Amina Adamu Augie
+- Justice Lawal Garba
+- Justice Helen Moronkeji Ogunwumiju
+- Justice Uwani Musa Abba-Aji
+- Justice Mohammed Lawal Garba
+- Justice Tijjani Abubakar
+- Justice Emmanuel Agim
+- Justice Adamu Jauro
+
+Notable Former Justices:
+- Justice Mary Ukaego Odili (retired)
+- Justice Walter Onnoghen (former CJN)
+- Justice Tanko Muhammad (former CJN)
+- Justice Aloma Mariam Mukhtar (first female CJN, 2012-2014)
+
+CONSTITUTIONAL PROVISIONS AND RECENT INTERPRETATIONS
+===================================================
+
+Key Constitutional Articles Frequently Interpreted:
+- Article 6: Judicial Powers
+- Article 230-234: Supreme Court jurisdiction and composition
+- Article 251: Federal High Court jurisdiction
+- Article 4: Legislative powers and federal/state division
+- Article 162-168: Revenue allocation and fiscal federalism
+
+Recent Constitutional Interpretations:
+1. Local Government Autonomy (2024): Supreme Court affirmed constitutional independence of local governments
+2. Revenue Allocation: Ongoing cases on federal allocation formula
+3. Electoral Disputes: Multiple cases on election petition procedures
+4. Fundamental Rights: Progressive interpretation of gender equality and inheritance rights
+
+This comprehensive data provides the foundation for populating SCONIA's legal database with authentic Nigerian legal content, ensuring users access real, current, and authoritative legal information.

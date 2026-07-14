@@ -1,0 +1,11 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'build'
+  - '-f'
+  - 'scripts/Dockerfile.init'
+  - '-t'
+  - 'gcr.io/day-one-465214/sconia-init:latest'
+  - '.'
+images:
+- 'gcr.io/day-one-465214/sconia-init:latest'

@@ -1,0 +1,150 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sconia-api
+  labels:
+    app: sconia-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sconia-api
+  template:
+    metadata:
+      labels:
+        app: sconia-api
+    spec:
+      containers:
+      - name: sconia-api
+        image: gcr.io/day-one-465214/sconia-api:latest
+        ports:
+        - containerPort: 8000
+          name: http
+        env:
+        - name: DATABASE_URL
+          value: "postgresql://sconia_user:SconiaApp2024Pass@localhost:5432/sconia_db"
+        - name: DATABASE_URL_ASYNC
+          value: "postgresql+asyncpg://sconia_user:SconiaApp2024Pass@localhost:5432/sconia_db"
+        - name: REDIS_URL
+          value: "redis://10.57.87.219:6379/0"
+        - name: SKIP_DB_INIT
+          value: "false"
+        - name: ENVIRONMENT
+          value: "production"
+        - name: DEBUG
+          value: "true"
+        - name: VECTOR_DB_TYPE
+          value: "qdrant"
+        - name: QDRANT_URL
+          value: "https://46d164a0-aa9f-48c0-8ffc-1b0d1b60a591.us-east4-0.gcp.cloud.qdrant.io:6333"
+        - name: QDRANT_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: qdrant-api-key
+              key: latest
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: openai-api-key
+              key: latest
+        - name: SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: secret-key
+              key: latest
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 3
+        startupProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 30
+      # Cloud SQL Proxy sidecar for secure database connection
+      - name: cloud-sql-proxy
+        image: gcr.io/cloudsql-docker/gce-proxy:1.33.2
+        command:
+          - "/cloud_sql_proxy"
+          - "-instances=day-one-465214:us-central1:sconia-postgres=tcp:5432"
+          - "-credential_file=/secrets/service_account.json"
+        securityContext:
+          runAsNonRoot: true
+        volumeMounts:
+        - name: service-account-key
+          mountPath: /secrets/
+          readOnly: true
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "200m"
+      volumes:
+      - name: service-account-key
+        secret:
+          secretName: cloudsql-instance-credentials
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sconia-api-service
+  labels:
+    app: sconia-api
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 8000
+    protocol: TCP
+    name: http
+  selector:
+    app: sconia-api
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: sconia-api-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: sconia-api
+  minReplicas: 1
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80

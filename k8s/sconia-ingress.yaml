@@ -1,0 +1,38 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sconia-api-ingress
+  annotations:
+    kubernetes.io/ingress.class: "gce"
+    kubernetes.io/ingress.global-static-ip-name: "sconia-api-ip"
+    networking.gke.io/managed-certificates: "sconia-ssl-cert"
+    kubernetes.io/ingress.allow-http: "true"
+spec:
+  rules:
+  - host: sconia-api.nip.io
+    http:
+      paths:
+      - path: /*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: sconia-api-service
+            port:
+              number: 80
+  - http:
+      paths:
+      - path: /*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: sconia-api-service
+            port:
+              number: 80
+---
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: sconia-ssl-cert
+spec:
+  domains:
+    - sconia-api.nip.io

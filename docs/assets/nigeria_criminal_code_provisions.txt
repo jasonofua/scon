@@ -1,0 +1,224 @@
+CRIMINAL CODE ACT - FEDERAL REPUBLIC OF NIGERIA
+==============================================
+
+CHAPTER 1 - INTERPRETATION
+==========================
+
+Section 1 - Short Title
+-----------------------
+This Act may be cited as the Criminal Code Act.
+
+Section 2 - Interpretation
+-------------------------
+In this Code, unless the context otherwise requires:
+"Court" means any court of competent jurisdiction
+"Grievous harm" means any harm which amounts to a maim or dangerous harm, or seriously or permanently injures the powers of any member, organ or faculty
+"Harm" means any bodily hurt, disease or disorder whether permanent or temporary
+"Kill" means to cause the death of another person by an unlawful act or omission
+"Malice aforethought" means an intention to cause death or grievous harm to any person
+"Steal" means to fraudulently and without claim of right take and carry away anything capable of being stolen with intent to permanently deprive the owner thereof
+
+CHAPTER 2 - PARTIES TO OFFENCES
+===============================
+
+Section 7 - Principal Offenders
+------------------------------
+When an offence is committed, each of the following persons is deemed to have taken part in committing the offence and to be guilty of the offence, and may be charged with actually committing it, that is to say:
+(a) every person who actually does the act or makes the omission which constitutes the offence;
+(b) every person who does or omits to do any act for the purpose of enabling or aiding another person to commit the offence;
+(c) every person who aids another person in committing the offence;
+(d) any person who counsels or procures any other person to commit the offence.
+
+Section 8 - Offences Committed in Prosecution of Common Purpose
+--------------------------------------------------------------
+When two or more persons form a common intention to prosecute an unlawful purpose in conjunction with one another, and in the prosecution of such purpose an offence is committed of such a nature that its commission was a probable consequence of the prosecution of such purpose, each of them is deemed to have committed the offence.
+
+CHAPTER 3 - PUNISHMENTS
+=======================
+
+Section 9 - Kinds of Punishment
+------------------------------
+The punishments which may be inflicted under this Code are:
+(a) death;
+(b) imprisonment;
+(c) fine;
+(d) forfeiture;
+(e) compensation;
+(f) costs;
+(g) security to keep the peace and be of good behaviour;
+(h) whipping.
+
+Section 10 - Sentence of Death
+-----------------------------
+(1) When any person is sentenced to death, the sentence shall direct that he be hanged by the neck until he is dead.
+(2) When a woman convicted of an offence punishable with death alleges that she is pregnant, the court shall inquire into the fact, and if it finds that she is pregnant, shall order the execution of the sentence to be postponed, and may either remit the sentence or order her to be imprisoned for life.
+
+CHAPTER 4 - OFFENCES AGAINST PUBLIC ORDER
+=========================================
+
+Section 37 - Definition of Treason
+---------------------------------
+Any person who:
+(a) kills or attempts to kill the President or does him any bodily harm tending to the destruction of his life, or maims or wounds him, or imprisons or restrains him; or
+(b) forms an intention to effect any of the purposes aforesaid and manifests such intention by an overt act; or
+(c) conspires with any person to effect any of the purposes aforesaid; or
+(d) instigates any foreigner to invade Nigeria with an armed force;
+is guilty of treason, and is liable to the punishment of death.
+
+Section 38 - Treasonable Felony
+------------------------------
+Any person who:
+(a) attempts unlawfully to overthrow the Government of the Federation or of a State; or
+(b) instigates any person to attempt to overthrow the Government of the Federation or of a State; or
+(c) conspires with any person to overthrow the Government of the Federation or of a State;
+is guilty of treasonable felony and is liable to imprisonment for life.
+
+Section 41 - Sedition
+--------------------
+Any person who:
+(a) does or attempts to do, or makes any preparation to do, or conspires with any person to do any act with a seditious intention; or
+(b) utters any seditious words; or
+(c) prints, publishes, sells, offers for sale, distributes, or reproduces any seditious publication; or
+(d) imports any seditious publication;
+is guilty of a misdemeanour, and is liable to imprisonment for three years.
+
+CHAPTER 5 - OFFENCES AGAINST THE ADMINISTRATION OF LAW AND JUSTICE
+==================================================================
+
+Section 106 - Perjury
+--------------------
+Any person who, in any judicial proceeding, or for the purpose of instituting any judicial proceeding, knowingly gives false testimony touching any matter which is material to any question then depending in that proceeding, or intended to be raised in that proceeding, is guilty of a felony, and is liable to imprisonment for fourteen years.
+
+Section 107 - False Evidence
+---------------------------
+Any person who, being required or authorized by law to make any statement on oath for any purpose, and being lawfully sworn otherwise than in a judicial proceeding, knowingly makes a false statement, is guilty of a misdemeanour, and is liable to imprisonment for three years.
+
+Section 108 - Fabricating Evidence
+---------------------------------
+Any person who, with intent to mislead any tribunal in any judicial proceeding:
+(a) fabricates evidence by any means other than perjury or subornation of perjury; or
+(b) knowingly makes use of such fabricated evidence;
+is guilty of a felony, and is liable to imprisonment for seven years.
+
+CHAPTER 6 - OFFENCES RELATING TO RELIGION
+=========================================
+
+Section 210 - Insult to Religion
+-------------------------------
+Any person who:
+(a) destroys, damages, or defiles any place of divine worship or any object which is held sacred by any class of persons with the intention of thereby insulting the religion of any class of persons or with the knowledge that any class of persons is likely to consider such destruction, damage, or defilement as an insult to their religion; or
+(b) voluntarily causes disturbance to any assembly lawfully engaged in the performance of religious worship or religious ceremony;
+is guilty of a misdemeanour, and is liable to imprisonment for two years.
+
+CHAPTER 7 - OFFENCES AGAINST THE PERSON
+=======================================
+
+Section 306 - Murder
+-------------------
+Any person who unlawfully kills another under any of the following circumstances, that is to say:
+(a) if the offender intends to cause the death of the person killed, or of some other person; or
+(b) if the offender intends to do to the person killed or to some other person some grievous harm; or
+(c) if death is caused by means of an act done in the prosecution of an unlawful purpose, which act is of such a nature as to be likely to endanger human life;
+is guilty of murder.
+
+Section 307 - Punishment of Murder
+---------------------------------
+Any person who commits the offence of murder shall be sentenced to death.
+
+Section 308 - Manslaughter
+-------------------------
+Any person who unlawfully kills another under such circumstances as not to constitute murder is guilty of manslaughter, and is liable to imprisonment for life.
+
+Section 320 - Grievous Harm
+--------------------------
+Any person who unlawfully does grievous harm to another is guilty of a felony, and is liable to imprisonment for seven years.
+
+Section 335 - Common Assault
+---------------------------
+Any person who unlawfully assaults another is guilty of a misdemeanour, and is liable to imprisonment for one year.
+
+CHAPTER 8 - OFFENCES AGAINST PROPERTY
+=====================================
+
+Section 383 - Stealing
+---------------------
+Any person who steals anything capable of being stolen is guilty of a felony, and is liable, if no other punishment is provided, to imprisonment for three years.
+
+Section 384 - Punishment of Stealing
+-----------------------------------
+(1) If the thing stolen is a testamentary instrument, whether the testator is living or dead, the offender is liable to imprisonment for ten years.
+(2) If the thing stolen is cattle, the offender is liable to imprisonment for fourteen years.
+(3) If the offence is committed by a person in the capacity of clerk or servant, and the thing stolen is the property of his employer, the offender is liable to imprisonment for seven years.
+
+Section 390 - Robbery
+--------------------
+Any person who steals anything, and, at or immediately before or after the time of stealing it, uses or threatens to use actual violence to any person or property in order to obtain or retain the thing stolen or to prevent or overcome resistance to its being stolen or retained, is guilty of robbery.
+
+Section 391 - Punishment of Robbery
+----------------------------------
+Any person who commits the offence of robbery is liable to imprisonment for twenty-one years.
+
+Section 402 - Burglary
+---------------------
+Any person who:
+(a) breaks and enters any building, tent, or vessel used as a human dwelling with intent to commit a felony therein; or
+(b) having entered any building, tent, or vessel used as a human dwelling with intent to commit a felony therein, breaks out of the same;
+is guilty of a felony, and is liable to imprisonment for fourteen years.
+
+CHAPTER 9 - OFFENCES RELATING TO CURRENCY
+=========================================
+
+Section 440 - Counterfeiting Coin
+--------------------------------
+Any person who makes or begins to make any counterfeit coin is guilty of a felony, and is liable to imprisonment for fourteen years.
+
+Section 441 - Uttering Counterfeit Coin
+-------------------------------------
+Any person who utters any counterfeit coin, knowing it to be counterfeit, is guilty of a misdemeanour, and is liable to imprisonment for two years.
+
+CHAPTER 10 - OFFENCES AGAINST MORALITY
+======================================
+
+Section 214 - Rape
+-----------------
+Any person who has unlawful carnal knowledge of a woman or girl, without her consent, or with her consent if the consent is obtained by force or by means of threats or intimidation of any kind, or by fear of harm, or by means of false and fraudulent representation as to the nature of the act, or, in the case of a married woman, by impersonating her husband, is guilty of an offence which is called rape.
+
+Section 215 - Punishment of Rape
+-------------------------------
+Any person who commits the offence of rape is liable to imprisonment for life, with or without whipping.
+
+Section 218 - Defilement of Girls Under Thirteen
+-----------------------------------------------
+Any person who has unlawful carnal knowledge of a girl under the age of thirteen years is guilty of a felony, and is liable to imprisonment for life, with or without whipping.
+
+Section 221 - Indecent Treatment of Girls Under Sixteen
+-----------------------------------------------------
+Any person who unlawfully and indecently deals with a girl under the age of sixteen years is guilty of a misdemeanour, and is liable to imprisonment for two years, with or without whipping.
+
+CHAPTER 11 - NUISANCES AND OFFENCES AGAINST HEALTH AND CONVENIENCE
+==================================================================
+
+Section 245 - Common Nuisance
+----------------------------
+Any person who does an act not authorized by law, or omits to discharge a legal duty, and thereby causes any common injury, or danger, or annoyance, or obstructs or causes inconvenience to the public in the exercise of common rights, commits a misdemeanour, and is liable to imprisonment for one year.
+
+Section 249 - Adulteration of Food or Drink
+------------------------------------------
+Any person who adulterates any article of food or drink, so as to make such article noxious as food or drink, intending to sell such article as food or drink, or knowing it to be likely that the same will be sold as food or drink, is guilty of a misdemeanour, and is liable to imprisonment for one year.
+
+CHAPTER 12 - ATTEMPTS AND CONSPIRACIES
+======================================
+
+Section 516 - Attempts to Commit Offences
+----------------------------------------
+Any person who attempts to commit a felony or misdemeanour is guilty of an offence, which, unless otherwise stated, is a misdemeanour.
+
+Section 517 - Punishment of Attempts
+-----------------------------------
+Any person who attempts to commit a felony of any kind is liable, if no other punishment is provided, to a punishment equal to one-half of the greatest punishment to which an offender convicted of the felony which he attempted to commit is liable.
+
+Section 518 - Conspiracy to Commit Felony
+----------------------------------------
+Any person who conspires with another to commit a felony, or to do any act in any part of the world which if done in Nigeria would be a felony, and which is an offence under the laws of the place where it is proposed to be done, is guilty of a felony, and is liable to imprisonment for seven years, or, if the greatest punishment to which a person convicted of the felony in question is liable is less than imprisonment for seven years, then to such lesser punishment.
+
+This Criminal Code forms the foundation of criminal law in Nigeria, defining offences and prescribing punishments for various crimes against the state, persons, property, and public order.

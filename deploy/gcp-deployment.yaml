@@ -1,0 +1,75 @@
+# Google Cloud Run deployment configuration for SCONIA
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: sconia-api
+  annotations:
+    run.googleapis.com/ingress: all
+    run.googleapis.com/execution-environment: gen2
+spec:
+  template:
+    metadata:
+      annotations:
+        run.googleapis.com/cpu-throttling: "false"
+        run.googleapis.com/memory: "2Gi"
+        run.googleapis.com/cpu: "1000m"
+        run.googleapis.com/max-instances: "10"
+        run.googleapis.com/min-instances: "1"
+    spec:
+      containerConcurrency: 80
+      timeoutSeconds: 300
+      containers:
+      - image: gcr.io/PROJECT_ID/sconia-api:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DATABASE_URL
+          value: "postgresql://username:password@/sconia?host=/cloudsql/PROJECT_ID:REGION:INSTANCE_NAME"
+        - name: QDRANT_URL
+          value: "https://your-qdrant-cluster.qdrant.io"
+        - name: QDRANT_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: sconia-secrets
+              key: qdrant-api-key
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: sconia-secrets
+              key: openai-api-key
+        - name: REDIS_URL
+          value: "redis://your-redis-instance:6379"
+        - name: ENVIRONMENT
+          value: "production"
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 2Gi
+          requests:
+            cpu: 500m
+            memory: 1Gi
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: sconia-frontend
+  annotations:
+    run.googleapis.com/ingress: all
+spec:
+  template:
+    metadata:
+      annotations:
+        run.googleapis.com/memory: "512Mi"
+        run.googleapis.com/cpu: "500m"
+    spec:
+      containers:
+      - image: gcr.io/PROJECT_ID/sconia-frontend:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: VITE_API_URL
+          value: "https://sconia-api-HASH-uc.a.run.app"
+        resources:
+          limits:
+            cpu: 500m
+            memory: 512Mi

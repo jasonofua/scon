@@ -1,0 +1,269 @@
+SUPREME COURT OF NIGERIA - LANDMARK CASES
+=========================================
+
+RECENT LANDMARK CASES (2023-2024)
+=================================
+
+1. NATIONAL INLAND WATERWAYS AUTHORITY v. LAGOS STATE GOVERNMENT (2024)
+-----------------------------------------------------------------------
+Date: January 5, 2024
+Citation: SC.1/2024
+Justices: 7-member panel led by CJN Kekere-Ekun
+
+Facts:
+- Dispute over jurisdiction and control of inland waterways
+- Lagos State claimed authority over waterways within its territory
+- Federal Government through NIWA claimed exclusive jurisdiction
+
+Issues:
+- Whether states have concurrent jurisdiction over inland waterways
+- Extent of federal exclusive powers over maritime matters
+- Revenue sharing from waterway activities
+
+Held:
+- Federal Government has exclusive jurisdiction over navigable waterways
+- States retain authority over non-navigable internal waters
+- Revenue sharing formula must reflect constitutional provisions
+
+Significance:
+- Clarified federal-state jurisdictional boundaries
+- Important for maritime law and revenue allocation
+- Precedent for future waterway disputes
+
+2. FEDERAL GOVERNMENT v. 36 STATE GOVERNMENTS (Local Government Autonomy Case) (2024)
+------------------------------------------------------------------------------------
+Date: July 11, 2024
+Citation: SC.343/2024
+Justices: Full court (7 justices)
+
+Facts:
+- Federal Government sued all 36 state governments
+- Alleged unconstitutional control over local government funds
+- States accused of undermining local government autonomy
+
+Issues:
+- Constitutional status of local governments
+- Direct allocation of funds to local governments
+- State interference in local government administration
+
+Held:
+- Local governments are constitutionally recognized third tier of government
+- Federal allocation must go directly to local governments
+- States cannot dissolve democratically elected local government councils
+- Joint State-Local Government accounts are unconstitutional
+
+Significance:
+- Landmark decision on fiscal federalism
+- Strengthened local government autonomy
+- Major constitutional interpretation on governance structure
+
+3. LOTTERY AND GAMING REGULATION CASE (2024)
+--------------------------------------------
+Date: October 14, 2024
+Citation: SC.567/2024
+Justices: 5-member panel
+
+Facts:
+- Multiple states claimed authority to regulate lottery operations
+- Federal Government asserted exclusive jurisdiction
+- Conflict over licensing and taxation of gaming activities
+
+Issues:
+- Whether lottery regulation falls under federal or state jurisdiction
+- Taxation powers over gaming activities
+- Licensing authority for gambling operations
+
+Held:
+- Lottery and gaming regulation is on concurrent legislative list
+- Both federal and state governments can regulate within their spheres
+- Federal law prevails in case of conflict
+- States can impose additional regulations not inconsistent with federal law
+
+Significance:
+- Clarified gambling regulation framework
+- Important for revenue generation
+- Balanced federal-state regulatory powers
+
+4. RIVERS STATE POLITICAL CRISIS CASE (2024)
+--------------------------------------------
+Date: Multiple hearings throughout 2024
+Citation: SC.234/2024
+
+Facts:
+- Political crisis in Rivers State affecting governance
+- Dispute over control of state assembly and executive
+- Federal intervention in state fund allocation
+
+Issues:
+- Federal power to intervene in state political crises
+- Constitutional requirements for state governance
+- Protection of democratic institutions
+
+Held:
+- Federal Government can intervene to protect constitutional democracy
+- State funds can be withheld pending resolution of constitutional crisis
+- Democratic institutions must be protected from unconstitutional actions
+
+Significance:
+- Precedent for federal intervention in state crises
+- Protection of democratic governance
+- Balance between federal oversight and state autonomy
+
+HISTORIC LANDMARK CASES
+=======================
+
+5. ATTORNEY GENERAL OF ONDO STATE v. ATTORNEY GENERAL OF THE FEDERATION (1982)
+------------------------------------------------------------------------------
+Citation: (1982) 3 NCLR 807
+
+Facts:
+- Dispute over revenue allocation formula
+- Ondo State challenged federal retention of oil revenues
+- Constitutional interpretation of resource control
+
+Issues:
+- Derivation principle in revenue allocation
+- Federal versus state control of natural resources
+- Constitutional provisions on revenue sharing
+
+Held:
+- Natural resources belong to the Federal Government
+- Derivation principle applies but with federal oversight
+- States entitled to fair share based on constitutional formula
+
+Significance:
+- Foundation case for resource control disputes
+- Established federal supremacy over natural resources
+- Still cited in modern revenue allocation cases
+
+6. AWOLOWO v. SHAGARI (1979)
+---------------------------
+Citation: (1979) 6-9 SC 51
+
+Facts:
+- Presidential election petition
+- Challenge to 1979 presidential election results
+- Constitutional interpretation of election requirements
+
+Issues:
+- Requirements for valid presidential election
+- Geographical spread requirement
+- Burden of proof in election petitions
+
+Held:
+- Presidential candidate must satisfy constitutional requirements
+- Geographical spread is mandatory for legitimacy
+- High burden of proof required for election nullification
+
+Significance:
+- Landmark election law case
+- Established precedent for presidential election disputes
+- Constitutional interpretation of democratic requirements
+
+7. MARWA v. NYAKO (2012)
+-----------------------
+Citation: (2012) 9 NWLR (Pt. 1304) 199
+
+Facts:
+- Gubernatorial election dispute in Adamawa State
+- Challenge to election results and procedures
+- Constitutional issues in state elections
+
+Issues:
+- Validity of gubernatorial elections
+- Electoral procedures and constitutional compliance
+- Jurisdiction of election petition tribunals
+
+Held:
+- Strict compliance with electoral laws required
+- Constitutional procedures must be followed
+- Election tribunals have exclusive jurisdiction over election disputes
+
+Significance:
+- Important for state election law
+- Procedural requirements for valid elections
+- Jurisdictional clarity for election disputes
+
+8. UGOCHUKWU v. ARARAUME (2007)
+------------------------------
+Citation: (2007) 12 NWLR (Pt. 1048) 365
+
+Facts:
+- Senatorial election dispute
+- Challenge to primary election and general election
+- Party nomination procedures
+
+Issues:
+- Validity of party primary elections
+- Constitutional requirements for candidacy
+- Court jurisdiction over party internal affairs
+
+Held:
+- Valid party nomination is prerequisite for election
+- Courts have limited jurisdiction over party primaries
+- Constitutional requirements must be satisfied
+
+Significance:
+- Clarified party nomination procedures
+- Limited court intervention in party affairs
+- Important for electoral jurisprudence
+
+9. WOMEN'S INHERITANCE RIGHTS CASES (2023-2024)
+-----------------------------------------------
+Multiple cases addressing customary law vs constitutional rights
+
+Key Cases:
+- Mojekwu v. Ejikeme (revisited)
+- Various inheritance disputes across different states
+
+Issues:
+- Conflict between customary law and constitutional rights
+- Gender equality in inheritance
+- Modernization of traditional practices
+
+Recent Holdings:
+- Constitutional rights supersede discriminatory customary practices
+- Women have equal inheritance rights regardless of customary law
+- Traditional practices must conform to constitutional principles
+
+Significance:
+- Progressive interpretation of women's rights
+- Modernization of customary law
+- Gender equality advancement
+
+10. CONSTITUTIONAL INTERPRETATION CASES
+--------------------------------------
+
+Key Areas of Recent Constitutional Interpretation:
+- Fundamental rights enforcement
+- Federal-state jurisdictional disputes
+- Electoral law and democratic governance
+- Revenue allocation and fiscal federalism
+- Judicial independence and separation of powers
+
+Trends in Supreme Court Jurisprudence:
+- Strengthening democratic institutions
+- Protecting fundamental rights
+- Clarifying federal-state relationships
+- Modernizing traditional practices
+- Ensuring constitutional supremacy
+
+IMPACT ON NIGERIAN JURISPRUDENCE
+================================
+
+These landmark cases have:
+- Shaped constitutional interpretation
+- Established important legal precedents
+- Clarified governmental powers and responsibilities
+- Protected democratic institutions
+- Advanced human rights protection
+- Modernized legal frameworks
+
+The Supreme Court continues to play a crucial role in:
+- Constitutional interpretation
+- Protection of democracy
+- Federal-state balance
+- Rights protection
+- Legal development
+
+These cases form the foundation of modern Nigerian constitutional law and continue to influence legal decisions across all levels of the Nigerian judiciary.

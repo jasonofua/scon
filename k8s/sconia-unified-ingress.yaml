@@ -1,0 +1,56 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sconia-unified-ingress
+  annotations:
+    kubernetes.io/ingress.class: "gce"
+    kubernetes.io/ingress.allow-http: "true"
+spec:
+  rules:
+  - http:
+      paths:
+      # API routes - send to backend
+      - path: /api/*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: sconia-api-service
+            port:
+              number: 80
+      - path: /health
+        pathType: Exact
+        backend:
+          service:
+            name: sconia-api-service
+            port:
+              number: 80
+      - path: /docs
+        pathType: Exact
+        backend:
+          service:
+            name: sconia-api-service
+            port:
+              number: 80
+      - path: /openapi.json
+        pathType: Exact
+        backend:
+          service:
+            name: sconia-api-service
+            port:
+              number: 80
+      # All other routes - send to frontend
+      - path: /*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: sconia-frontend-service
+            port:
+              number: 80
+---
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: sconia-ssl-cert
+spec:
+  domains:
+    - sconia.nip.io
