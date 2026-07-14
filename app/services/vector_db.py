@@ -46,7 +46,7 @@ class VectorDBService:
                 logger.warning(f"Could not connect to Qdrant at init: {e}")
 
         self.collection_name = "sconia_legal_documents"
-        self.embedding_size = 768  # Gemini text-embedding-004 dimension
+        self.embedding_size = 3072  # gemini-embedding-001 dimension
 
     async def initialize_collections(self):
         """Initialize collections for legal documents."""

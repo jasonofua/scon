@@ -81,7 +81,7 @@ services:
       - key: GEMINI_MODEL
         value: gemini-2.0-flash
       - key: GEMINI_EMBEDDING_MODEL
-        value: text-embedding-004
+        value: models/gemini-embedding-001
       - key: OPENAI_API_KEY
         sync: false       # optional OpenAI fallback
       - key: OPENAI_MODEL
