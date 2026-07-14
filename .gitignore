@@ -140,6 +140,7 @@ logs/
 # Secrets – NEVER commit these
 service_account.json
 .db_password
+.env.render
 
 # Docker
 .dockerignore

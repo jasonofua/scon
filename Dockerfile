@@ -54,8 +54,12 @@ RUN mkdir -p /app/uploads /app/data /app/logs /app/tiktoken_cache \
 
 USER appuser
 
-# Expose port (Cloud Run overrides this with $PORT env var, defaulting to 8080)
-EXPOSE 8080
+# Expose port (Render overrides this with $PORT env var)
+EXPOSE 8000
 
-# Run the application via the generic entrypoint script
-CMD ["/bin/bash", "/app/scripts/entrypoint.sh"]
+# Health check (uses PORT env var; default 8000)
+HEALTHCHECK --interval=30s --timeout=30s --start-period=60s --retries=3 \
+    CMD curl -f http://localhost:${PORT:-8000}/health || exit 1
+
+# Run the application — scripts/render_start.sh handles migrations first
+CMD ["/bin/bash", "/app/scripts/render_start.sh"]

@@ -22,7 +22,9 @@ if ! command -v gcloud &> /dev/null; then
 fi
 
 # Fetch active project or prompt
-PROJECT_ID=$(gcloud config get-value project 2>/dev/null)
+if [ -z "$PROJECT_ID" ]; then
+    PROJECT_ID=$(gcloud config get-value project 2>/dev/null)
+fi
 if [ -z "$PROJECT_ID" ] || [ "$PROJECT_ID" = "(unset)" ]; then
     echo -e "${YELLOW}⚠️  No active project set in gcloud config.${NC}"
     read -p "Enter your Google Cloud Project ID: " PROJECT_ID
@@ -32,9 +34,11 @@ else
 fi
 
 # Set deployment region
-REGION="us-central1"
-read -p "Enter region [$REGION]: " input_region
-REGION="${input_region:-$REGION}"
+if [ -z "$REGION" ]; then
+    REGION="us-central1"
+    read -p "Enter region [$REGION]: " input_region
+    REGION="${input_region:-$REGION}"
+fi
 
 # Set configuration names
 REPOSITORY="sconia"
@@ -95,24 +99,53 @@ else
 fi
 
 # Create SQL User
-DB_PASSWORD=""
-if gcloud sql users describe "$DB_USER" --instance="$DB_INSTANCE_NAME" &>/dev/null; then
-    echo -e "${YELLOW}ℹ️  Database user '$DB_USER' already exists.${NC}"
-    read -sp "Enter database password for user '$DB_USER': " DB_PASSWORD
-    echo ""
+# Create SQL User
+if [ -z "$DB_PASSWORD" ]; then
+    if gcloud sql users describe "$DB_USER" --instance="$DB_INSTANCE_NAME" &>/dev/null; then
+        echo -e "${YELLOW}ℹ️  Database user '$DB_USER' already exists.${NC}"
+        if gcloud secrets describe "db-url" &>/dev/null; then
+            DB_CONNECTION_URL=$(gcloud secrets versions access latest --secret="db-url" 2>/dev/null || echo "")
+            if [ -n "$DB_CONNECTION_URL" ]; then
+                DB_PASSWORD=$(echo "$DB_CONNECTION_URL" | sed -E 's/.*:\/\/[^:]+:([^@]+)@.*/\1/')
+                echo -e "${GREEN}✅ Retrieved existing database password from Secret Manager.${NC}"
+            fi
+        fi
+        
+        if [ -z "$DB_PASSWORD" ]; then
+            if [ "$NON_INTERACTIVE" = "true" ]; then
+                DB_PASSWORD=$(openssl rand -base64 24)
+                echo -e "${YELLOW}NON_INTERACTIVE=true: Generating new database password.${NC}"
+            else
+                read -sp "Enter database password for user '$DB_USER': " DB_PASSWORD
+                echo ""
+            fi
+        fi
+    else
+        DB_PASSWORD=$(openssl rand -base64 24)
+        echo -e "${YELLOW}Creating user '$DB_USER' with generated password...${NC}"
+        gcloud sql users create "$DB_USER" \
+            --instance="$DB_INSTANCE_NAME" \
+            --password="$DB_PASSWORD"
+        echo -e "${GREEN}✅ Database user '$DB_USER' created.${NC}"
+    fi
 else
-    DB_PASSWORD=$(openssl rand -base64 24)
-    echo -e "${YELLOW}Creating user '$DB_USER' with generated password...${NC}"
-    gcloud sql users create "$DB_USER" \
-        --instance="$DB_INSTANCE_NAME" \
-        --password="$DB_PASSWORD"
-    echo -e "${GREEN}✅ Database user '$DB_USER' created.${NC}"
+    if gcloud sql users describe "$DB_USER" --instance="$DB_INSTANCE_NAME" &>/dev/null; then
+        echo -e "${YELLOW}ℹ️  Database user '$DB_USER' already exists, using provided password.${NC}"
+    else
+        echo -e "${YELLOW}Creating user '$DB_USER' with provided password...${NC}"
+        gcloud sql users create "$DB_USER" \
+            --instance="$DB_INSTANCE_NAME" \
+            --password="$DB_PASSWORD"
+        echo -e "${GREEN}✅ Database user '$DB_USER' created.${NC}"
+    fi
 fi
 
 # ── 5. Set Up Cloud Memorystore Redis (Optional) ─────────────────────────────
-USE_REDIS="no"
-read -p "Do you want to provision Cloud Memorystore Redis? (yes/no) [no]: " use_redis_input
-USE_REDIS="${use_redis_input:-$USE_REDIS}"
+if [ -z "$USE_REDIS" ]; then
+    USE_REDIS="no"
+    read -p "Do you want to provision Cloud Memorystore Redis? (yes/no) [no]: " use_redis_input
+    USE_REDIS="${use_redis_input:-$USE_REDIS}"
+fi
 
 REDIS_URL="memory://"
 if [ "$USE_REDIS" = "yes" ] || [ "$USE_REDIS" = "y" ]; then
@@ -158,17 +191,28 @@ APP_SECRET_KEY=$(openssl rand -base64 32)
 create_or_update_secret "secret-key" "$APP_SECRET_KEY"
 
 # External API Keys (Prompt user)
-read -p "Enter Gemini API Key (Required for model and embeddings): " GEMINI_API_KEY
+if [ -z "$GEMINI_API_KEY" ]; then
+    read -p "Enter Gemini API Key (Required for model and embeddings): " GEMINI_API_KEY
+fi
 create_or_update_secret "gemini-key" "$GEMINI_API_KEY"
 
-read -p "Enter Qdrant Cluster URL (e.g. https://xxxx.gcp.cloud.qdrant.io:6333): " QDRANT_URL
+if [ -z "$QDRANT_URL" ]; then
+    read -p "Enter Qdrant Cluster URL (e.g. https://xxxx.gcp.cloud.qdrant.io:6333): " QDRANT_URL
+fi
 create_or_update_secret "qdrant-url" "$QDRANT_URL"
 
-read -p "Enter Qdrant API Key: " QDRANT_API_KEY
+if [ -z "$QDRANT_API_KEY" ]; then
+    read -p "Enter Qdrant API Key: " QDRANT_API_KEY
+fi
 create_or_update_secret "qdrant-key" "$QDRANT_API_KEY"
 
 # Optional OpenAI fallback
-read -p "Enter OpenAI API Key (Optional, press Enter to skip): " OPENAI_API_KEY
+if [ -z "$OPENAI_API_KEY" ]; then
+    # Check if we should prompt or default to empty
+    if [ "$NON_INTERACTIVE" != "true" ]; then
+        read -p "Enter OpenAI API Key (Optional, press Enter to skip): " OPENAI_API_KEY
+    fi
+fi
 if [ -n "$OPENAI_API_KEY" ]; then
     create_or_update_secret "openai-api-key" "$OPENAI_API_KEY"
 fi

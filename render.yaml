@@ -1,0 +1,172 @@
+## ─────────────────────────────────────────────────────────────
+## SCONIA – Render Blueprint (render.yaml)
+## https://render.com/docs/blueprint-spec
+##
+## Services:
+##   sconia-api      → FastAPI backend   (Docker)
+##   sconia-redis    → Redis cache       (add-on)
+##   sconia-frontend → React/Vite        (Static Site)
+##
+## Database:
+##   sconia-db       → PostgreSQL        (Render Postgres add-on)
+## ─────────────────────────────────────────────────────────────
+
+databases:
+  - name: sconia-db
+    databaseName: sconia
+    user: sconia
+    plan: free          # upgrade to starter/standard for production
+    region: oregon
+
+services:
+
+  # ── Redis Cache ───────────────────────────────────────────────
+  - type: redis
+    name: sconia-redis
+    plan: free          # upgrade for production
+    region: oregon
+    maxmemoryPolicy: allkeys-lru
+
+  # ── Backend API (FastAPI + Docker) ────────────────────────────
+  - type: web
+    name: sconia-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: starter
+    region: oregon
+    healthCheckPath: /health
+
+    envVars:
+      # ── Application ────────────────────────────────────────────
+      - key: APP_NAME
+        value: SCONIA
+      - key: APP_VERSION
+        value: "1.0.0"
+      - key: DEBUG
+        value: "False"
+      - key: LOG_LEVEL
+        value: INFO
+      - key: LOG_FORMAT
+        value: json
+
+      # ── Security ───────────────────────────────────────────────
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALGORITHM
+        value: HS256
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "30"
+
+      # ── Database (linked from Render Postgres add-on) ──────────
+      - key: DATABASE_URL
+        fromDatabase:
+          name: sconia-db
+          property: connectionString
+
+      # ── Vector Database ────────────────────────────────────────
+      - key: VECTOR_DB_TYPE
+        value: qdrant
+      - key: QDRANT_URL
+        sync: false       # paste your Qdrant Cloud URL in the dashboard
+      - key: QDRANT_API_KEY
+        sync: false       # paste your Qdrant API key in the dashboard
+      - key: CHROMADB_PATH
+        value: ./data/chromadb
+
+      # ── AI / ML ────────────────────────────────────────────────
+      - key: GEMINI_API_KEY
+        sync: false       # paste your Gemini API key in the dashboard
+      - key: GEMINI_MODEL
+        value: gemini-2.0-flash
+      - key: GEMINI_EMBEDDING_MODEL
+        value: text-embedding-004
+      - key: OPENAI_API_KEY
+        sync: false       # optional OpenAI fallback
+      - key: OPENAI_MODEL
+        value: gpt-4
+      - key: EMBEDDING_MODEL
+        value: text-embedding-ada-002
+      - key: MAX_TOKENS
+        value: "4000"
+      - key: TEMPERATURE
+        value: "0.1"
+
+      # ── CORS ───────────────────────────────────────────────────
+      # After the frontend deploys, update this to include its .onrender.com URL
+      - key: ALLOWED_ORIGINS
+        value: "http://localhost:3000,http://localhost:5173,https://sconia-frontend.onrender.com"
+      - key: ALLOWED_METHODS
+        value: "GET,POST,PUT,DELETE,OPTIONS"
+      - key: ALLOWED_HEADERS
+        value: "*"
+
+      # ── File Upload ────────────────────────────────────────────
+      - key: MAX_FILE_SIZE
+        value: "10485760"
+      - key: UPLOAD_DIR
+        value: ./uploads
+      - key: ALLOWED_FILE_TYPES
+        value: "pdf,docx,txt"
+
+      # ── Redis (linked from the redis service above) ────────────
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: sconia-redis
+          property: connectionString
+
+      # ── Rate Limiting ──────────────────────────────────────────
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "60"
+      - key: RATE_LIMIT_BURST
+        value: "10"
+
+      # ── Content Moderation ─────────────────────────────────────
+      - key: ENABLE_CONTENT_MODERATION
+        value: "True"
+      - key: PROFANITY_FILTER
+        value: "True"
+
+      # ── Analytics ─────────────────────────────────────────────
+      - key: ENABLE_ANALYTICS
+        value: "True"
+
+      # ── Python ────────────────────────────────────────────────
+      - key: PYTHONPATH
+        value: /app
+
+  # ── Frontend (React/Vite – Static Site) ──────────────────────
+  - type: web
+    name: sconia-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    pullRequestPreviewsEnabled: true
+
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-XSS-Protection
+        value: "1; mode=block"
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+
+    routes:
+      # React Router — all unmatched paths → index.html
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+    envVars:
+      # Set this to your sconia-api URL after the backend deploys, e.g.:
+      # https://sconia-api.onrender.com
+      - key: VITE_API_URL
+        sync: false

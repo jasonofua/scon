@@ -3,7 +3,7 @@ import type { AxiosResponse } from 'axios';
 import type { ChatRequest, ChatResponse, SearchResponse, ApiError } from '../types';
 
 // API Configuration
-const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://107.178.243.198';
 const API_VERSION = '/api/v1';
 
 // Create axios instance
