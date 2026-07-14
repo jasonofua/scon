@@ -199,18 +199,18 @@ class VectorDBService:
             # Create filter if conditions exist
             query_filter = Filter(must=filter_conditions) if filter_conditions else None
 
-            # Perform search
-            search_results = self.client.search(
+            # Perform search using current API (query_points replaces deprecated search())
+            search_response = self.client.query_points(
                 collection_name=self.collection_name,
-                query_vector=query_embedding,
+                query=query_embedding,
                 query_filter=query_filter,
                 limit=limit,
                 score_threshold=score_threshold,
             )
 
-            # Format results
+            # Format results — query_points returns a QueryResponse with .points list
             results = []
-            for result in search_results:
+            for result in search_response.points:
                 results.append(
                     {
                         "id": result.id,

@@ -1,7 +1,7 @@
 """
 Database configuration and session management for SCONIA.
 """
-from sqlalchemy import create_engine, MetaData
+from sqlalchemy import create_engine, MetaData, text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
@@ -63,6 +63,11 @@ async def init_db():
     """Initialize database tables."""
     try:
         async with async_engine.begin() as conn:
+            # Enable uuid-ossp extension
+            await conn.execute(text('CREATE EXTENSION IF NOT EXISTS "uuid-ossp"'))
+            # Enable vector extension for pgvector compatibility
+            await conn.execute(text('CREATE EXTENSION IF NOT EXISTS vector'))
+            # Create all registered tables
             await conn.run_sync(Base.metadata.create_all)
         logger.info("Database tables created successfully")
     except Exception as e:

@@ -37,12 +37,11 @@ async def lifespan(app: FastAPI):
         await cache_service.initialize()
         
         # Only initialize database if not in production deployment mode
-        skip_db_init = getattr(settings, "SKIP_DB_INIT", False)
-        if not skip_db_init:
+        if not settings.skip_db_init:
             await init_db()
             logger.info("Database initialized successfully")
         else:
-            logger.info("Skipping database initialization (SKIP_DB_INIT=True)")
+            logger.info("Skipping database initialization (skip_db_init=True)")
     except Exception as e:
         logger.error(f"Failed to initialize database: {e}")
         # Don't raise in production, just log the error and continue
