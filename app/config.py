@@ -52,7 +52,7 @@ class Settings(BaseSettings):
     openai_model: str = "gpt-4"
     embedding_model: str = "text-embedding-ada-002"
     gemini_api_key: Optional[str] = None
-    gemini_model: str = "gemini-2.5-flash"
+    gemini_model: str = "gemini-3.5-flash"
     gemini_embedding_model: str = "models/gemini-embedding-001"
     max_tokens: int = 4000
     temperature: float = 0.1
